@@ -1,0 +1,205 @@
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Imbue', serif;
+    font-size: 15px;
+    color: #ffffff;
+
+}
+body{
+
+    background-color: #000000;
+    /* overflow: hidden; */
+}
+.mainContent{
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: auto;    
+
+}
+.upSide{
+
+    position: relative;
+    top: 20%;
+    width: 100%;
+    height: 30%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    
+    transition: 2s;
+
+}
+.upSide h1{
+   
+    font-family: 'Courgette', cursive;
+    font-size: 4rem;
+
+}
+.upSide h2{
+
+    font-size: 2rem;
+
+}
+
+.symbols{
+
+    position: relative;
+    z-index: 500;
+    height: 20vh;
+    margin: 2% auto;
+
+    display: flex;
+    background-color: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    
+    transition: 1s;
+    
+}
+.symbols hr{
+    
+    width: 45%;
+    
+    background-color: #ffffff;
+    
+}
+.symbols img{
+    
+    width: 7%;
+    margin: 1rem;   
+    
+}
+#symbol{
+    
+    transform: rotate(0deg);
+    
+}
+
+.downSide{
+    
+    position: relative;
+    bottom: 20%;
+    width: 100%;
+    height: 30%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    transition: 2s;
+    
+}
+.downSide h1{
+    
+    font-size: 2.5rem;
+    font-family: 'Courgette', cursive;
+
+}
+.downSide ul li h2{
+
+    font-size: 1.5rem;
+
+}
+.downSide ul{
+
+    display: flex;
+    margin-top: 10px;
+
+}
+.downSide li{
+
+    list-style: none;
+
+}
+.downSide .circles{
+
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    margin: auto 5px;
+
+    background-color: #ffffff;
+
+}
+
+.contact{
+
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    height: 50px;
+    width: 200px;
+    
+    display: flex;
+    justify-content: space-evenly;
+
+    color: #ffffff;
+
+}
+.contact i{
+
+    /* margin: 1rem; */
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 2.2rem;
+    border: 1px #ffffff solid;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.contact i:hover{
+
+    color: rgb(240, 240, 20);
+    border: rgb(240, 240, 20) solid 1px;
+
+}
+
+.pen{
+
+    position: absolute;
+    width: 30%;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: rotate(18deg);
+
+    /* border: red solid 1px; */
+
+}
+.pen img{
+
+    width: 100%;
+    opacity: .3;
+    filter: blur(1px);
+}
+
+.signature{
+
+    position: absolute;
+    height: 110px;
+    width: 150px;
+    bottom: 0;
+    right: 0;
+
+
+}
+.signature img{
+
+    width: 100%;
+   
+}
