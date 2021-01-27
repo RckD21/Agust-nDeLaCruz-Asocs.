@@ -8,6 +8,15 @@ window.addEventListener('load',()=>{
     let symbol = document.querySelector('#symbol');
     let symbolPosition = 0;
 
+      if(window.innerWidth <= 600){
+          
+        upSide.style.transition = "0s";
+        downSide.style.transition = "0s";
+        upSide.style.top = "0";
+        downSide.style.bottom   = "0";
+      }
+      else {
+
         setTimeout(() => {
 
 
@@ -17,18 +26,22 @@ window.addEventListener('load',()=>{
 
         }, 500);
 
-        setTimeout(() => {
+       
+
+      }
+      setTimeout(() => {
             
-            setInterval(()=>{
+        setInterval(()=>{
 
-                symbol.style.transform = `rotate(${symbolPosition++}deg)`;
+            symbol.style.transform = `rotate(${symbolPosition++}deg)`;
 
-                if(symbolPosition >= 360) symbolPosition = 0;
+            if(symbolPosition >= 360) symbolPosition = 0;
 
-            },25);
-            
-        }, 1000);
+        },25);
+        
+    }, 1000);
 
+       
 
 });
 
