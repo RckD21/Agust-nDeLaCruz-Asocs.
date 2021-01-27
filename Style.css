@@ -13,6 +13,7 @@ body{
 
     background-color: #000000;
     overflow: hidden;
+    
 }
 .mainContent{
 
@@ -21,6 +22,8 @@ body{
     height: 100vh;
     margin: auto;    
 
+    padding: 10px;
+    
 }
 .upSide{
 
@@ -202,4 +205,48 @@ body{
 
     width: 100%;
    
+}
+
+@media only screen and (max-width: 700px){
+
+    *{
+
+        font-size: 10px;
+
+    }
+    body{
+
+
+        overflow: visible;
+        padding: 0 10px;
+
+    }
+    .pen{
+
+        visibility: hidden;
+
+    }   
+    .downSide ul{
+
+        display: inline-block;
+
+    }
+    .circles{
+
+       visibility: hidden;
+
+    }
+    .symbols{
+
+        height: 15%;
+
+    }
+    .symbols img{
+
+        width: 20%;
+
+    }
+
+
+
 }
