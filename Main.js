@@ -56,7 +56,7 @@ locationIcon.addEventListener('click', ()=>{
 });
 phone.addEventListener('click', ()=>{
 
-    window.open("https://wa.link/n8dkpt");
+    window.open("https://wa.link/yx5am5");
 
 });
 at.addEventListener('click', ()=>{
